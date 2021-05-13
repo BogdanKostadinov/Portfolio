@@ -1,0 +1,21 @@
+{
+  "name": "mycv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "dependencies": {
+    "bootstrap": "^5.0.0",
+    "browserify": "^17.0.0",
+    "net-browserify": "^0.2.4",
+    "node-mandrill": "^1.0.1",
+    "nodemailer": "^6.6.0",
+    "sweetalert2": "^10.16.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

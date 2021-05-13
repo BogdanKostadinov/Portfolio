@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+        <!-- BOOTSTRAP -->
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- FONT AWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+        <!-- EXTERNAL STYLE SHEET -->
+        <link rel="stylesheet" href="css/projects.css">
+
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <script src="sweetalert2.all.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>   
+
+</head>
+
+<body>
+    <!-- NavBar Start -->
+            <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <span class="menu-collapsed">My CV</span>
+                </a>
+            
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+            
+                        <li class="nav-item dropdown d-sm-block d-md-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Menu
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="smallerscreenmenu">
+                                <a class="dropdown-item" href="index.html">Home</a>
+                                <a class="dropdown-item" href="projects.html">My projects</a>
+                                <a class="dropdown-item gitHub" href="#">GitHub</a>
+                                <a class="dropdown-item linkedIn" href="#">LinkedIn</a>
+                            </div>
+                        </li>
+            
+                    </ul>
+                </div>
+            </nav>
+      <!-- NavBar END -->
+      
+      <div class="row" id="body-row">
+          <!-- Sidebar -->
+          <div id="sidebar-container" class="sidebar-expanded d-none d-md-block">
+              <!-- Bootstrap List Group -->
+              <ul class="list-group">
+                  <!-- Separator with title -->
+                  <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                      <small>MAIN MENU</small>
+                  </li>
+                  <!-- /END Separator -->
+                  <!-- Menu with submenu -->
+                  <a href="index.html" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                      <div class="d-flex w-100 justify-content-start align-items-center">
+                          <span class="fa  fa-fw mr-3"><i class="fas fa-home"></i></span> 
+                          <span class="menu-collapsed">Home</span>
+                      </div>
+                  </a>
+                  <a href="projects.html" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                      <div class="d-flex w-100 justify-content-start align-items-center">
+                          <span class="fa fa-user fa-fw mr-3"></span>
+                          <span class="menu-collapsed">My projects</span>
+                      </div>
+                  </a>
+                  <!-- Submenu content -->
+                  <!-- Separator with title -->
+                  <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                      <small>ADDITIONAL INFORMATION</small>
+                  </li>
+                  <!-- /END Separator -->
+                  <a href="#" class="bg-dark list-group-item list-group-item-action gitHub">
+                      <div class="d-flex w-100 justify-content-start align-items-center">
+                          <span class="fa fa-fw mr-3"><i class="fab fa-github"></i></span>
+                          <span class="menu-collapsed">GitHub</span>
+                      </div>
+                  </a>
+                  <a href="#" class="bg-dark list-group-item list-group-item-action linkedIn">
+                      <div class="d-flex w-100 justify-content-start align-items-center">
+                          <span class="fa fa-fw mr-3" aria-hidden="true"><i class="fab fa-linkedin-in"></i></span>
+                          <span class="menu-collapsed">LinkedIn </span>
+                      </div>
+                  </a>
+                  <!-- Separator without title -->
+                  <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed"><small>HIDE SIDE MENU</small></li>            
+                  <!-- /END Separator -->
+                  <a href="#" data-toggle="sidebar-colapse" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span id="collapse-icon" class="fa mr-3"></span>
+                        <span id="collapse-text" class="menu-collapsed">Collapse</span>
+                    </div>
+                </a>
+              </ul><!-- List Group END-->
+          </div><!-- sidebar-container END -->
+
+              <div class="col">
+
+                  <section class="topOfPage">
+
+                    <div class="card mb-3 mx-auto">
+                        <div class="row g-0">
+
+                          <div class="col-md-4 card-image">                      
+                            <!-- <img src="img/arm.jpg" alt="not found">    -->
+                            <a href="#" class="pop">
+                                <img src="img/arm.jpg">
+                            </a>             
+                          </div>
+
+                          <div class="col-md-8">
+                            <div class="card-body">
+                            <h4 class="card-header">Colour-sorter</h4>
+      
+                                <p class="card-text">
+                                  <a class="name">Robotics</a>
+                                  <br>
+                                  <a class="job">Arduino, Engineering, C++, Automation</a>
+                                  <br>
+                                  <br>
+                                    As a final year project in university, my idea was to develop a robot that automatically sorts objects by colour. 
+                                    My project aimed to target small, start-up companies and provide them with an affordable automation system.              
+                                  <br>
+                                  <br>
+                                   I used many different techniques during the development. Starting from designing the robotic arm by using SOLIDWORKS (3D modelling software), Arduino is the brains of the project and many different components.
+                                   The arm can move in 6 axis with the help of servo motors, detect objects with ultrasonic sensor and read colour with the TCS230 colour sensor. Also, two external power supplies are included in the project
+                                   to ensure that the current is consistent.       
+                                </p>
+
+                            <p class="card-text">Link to the robotic arm working - <a href="https://youtu.be/t0eMUAfBbyo">https://youtu.be/t0eMUAfBbyo</a></p>
+                            </div>
+                          </div>
+                        </div>
+                    </div> <!-- END of card -->
+                    <br>
+                    <hr class="solid">
+
+                    <div class="card mb-3 mx-auto">
+                        <div class="row g-0">
+
+                          <div class="col-md-4 card-image">                      
+                            <!-- <img src="img/unibook-admin.PNG" alt="not found">
+                            <img src="img/unibook-manager.PNG" alt="not found"> -->
+
+                            <a href="#" class="pop">
+                                <img src="img/unibook-admin.PNG" style="width: 400px; height: 220px;">
+                            </a>
+                                
+                            <a href="#" class="pop">
+                                <img src="img/unibook-manager.PNG" style="width: 400px; height: 220px;">
+                            </a>
+                          </div>
+                          <br>
+                          <hr class="solid">
+
+                          <div class="col-md-8">
+                            <div class="card-body">
+                            <h4 class="card-header">TheUniBook</h4>
+      
+                              <p class="card-text">
+                                  <a class="name">Web Development</a>
+                                  <br>
+                                  <a class="job">Java, RESTful API, SQL</a>
+                                  <br>
+                                  <br>
+                                    In my final year of university, I participated in a group project of seven people. We were tasked to develop a role-based intranet communication system for universities
+                                    by following Agile and Scrum methodology. We had to dedicate roles among team members (back-end developers, front-end developers, database engineers and testers, Scrum Master, Product owner)
+                                    and implement a list of requirements.                  
+                                  <br>
+                                  <br>
+                                  In this project, I took part as a back-end developer and product owner. My job was to create the backlog by converting the list of requirements into user stories.
+                                  Furthermore, I helped the other back-end developers and ensured that the requirements are met by the allocated deadline. We used Jira software for the development process and had daily meetings to ensure strong communication within the team.
+                                   As a team, we managed to deliver good results to our customers
+                                while following Agile methodology.
+                                  
+                            </p>
+                            <p class="card-text">Link to the UniBook - <a href="https://www.theunibook.co.uk/">https://www.theunibook.co.uk/</a></p>
+                            </div>
+                          </div>
+                        </div>
+                    </div> <!-- END of card -->
+                    <br>
+                    <hr class="solid">
+
+                    <div class="card mb-3 mx-auto">
+                        <div class="row g-0">
+                          
+                          <div class="col-md-4 card-image">                         
+                            <a href="#" class="pop drone">
+                                <img src="img/drone-top.jpg" >
+                            </a>   
+                          </div>
+  
+                          <div class="col-md-8">
+                            <div class="card-body">
+                            <h4 class="card-header">DIY Drone</h4>
+      
+                              <p class="card-text">
+                                  <a class="name">Robotics</a>
+                                  <br>
+                                  <a class="job">Arduino, C++</a>
+                                  <br>
+                                  <br>
+                                  In my first year at the University of Greenwich, I participated in a group project made of three people. 
+                                  We were tasked to develop a robot of our choice using Arduino electronics and C++ programming language. 
+                                  As a group, we made our decision and decided to take a different approach than other groups, so we created a DIY drone.                     
+                                  The drone consisted of many new skills that we had to learn since everyone was unfamiliar with the hardware and software of the project.
+                                  <br>
+                                  <br>
+                                  In this project, I took lead in the hardware development of the project. I had to research and understand how the electronic components worked and what is necessary for the completion of the drone.
+                                  Besides, I had to understand how the code of other similar projects work and implement it if necessary in our product.
+                                  <br>
+                                  The drone involved many different technologies. Signal transmission, engineering, design, hardware, software, physics etc.. However, in the end, we managed to design and develop a working prototype
+                                  with a lot of potential for future development.
+                                  
+                              </p>
+                         
+                            </div>
+                          </div>
+                        </div>
+  
+                      </div> <!-- END of card -->
+                    
+                      <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                          <div class="modal-content">              
+                            <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                              <img src="" class="imagepreview" style="width: 100%;" >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </section>
+              </div>
+              
+              <!-- SCRIPTS -->
+              <script src="js/plugins/jquery-3.3.1.min.js"></script>
+              <script src="js/plugins/bootstrap.min.js"></script>
+              <script src="js/projects.js"></script>              
+            </body>
+
+</html>
