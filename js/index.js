@@ -1,4 +1,6 @@
 
+let url = "https://bogdan-kostadinov-portfolio.herokuapp.com"
+
 $('.linkedIn').click(function(){
     redirectToPage('linkedIn');
 })
