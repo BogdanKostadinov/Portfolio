@@ -114,6 +114,10 @@ p.card-text {
     padding: 1rem;
 }
 
+.workExp{
+   margin-left: 50px;
+}
+
 a.name
 {
     pointer-events: none;
