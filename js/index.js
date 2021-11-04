@@ -46,7 +46,7 @@ function redirectToPage(website){
         },
        
       })
-      console.log("hrlo")
+
       swalWithBootstrapButtons.fire({
         title: 'Are you sure?',
         text: "You will be redirected to another page!",

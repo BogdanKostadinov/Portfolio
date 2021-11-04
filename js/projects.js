@@ -74,8 +74,7 @@ function redirectToPage(website){
             {
                 window.location = "https://github.com/BogdanKostadinov"
             }  
-           // $('.link').attr('href', $(this).find('span').attr('href'));
-           // $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+
         } 
         else{
 
