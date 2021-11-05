@@ -10,14 +10,29 @@ $('.gitHub').click(function(){
 })
 
 $('.send-message').click(function(){
-      Swal.fire({
-        title: 'Thank you for your feedback!',
-        text: 'Your feedback will help me improve the quality of my portfolio and website.',
-        imageUrl: 'https://t4.ftcdn.net/jpg/01/15/20/75/360_F_115207580_US2etunH78I7iMYHOoNVvxQTCIdoPdRj.jpg',
-        imageWidth: 400,
-        imageHeight: 250,
-        imageAlt: 'Custom image',
-      })
+
+    let x = document.getElementById("message-text").value;
+    if (x == "") {
+        Swal.fire({
+            position: 'top-end',
+            icon: 'error',
+            title: 'Message field is empty',
+            showConfirmButton: false,
+            timer: 2500
+          })
+      return false;
+    }
+    else{
+        Swal.fire({
+            title: 'Thank you for your feedback!',
+            text: 'Your feedback will help me improve the quality of my portfolio and website.',
+            imageUrl: 'https://t4.ftcdn.net/jpg/01/15/20/75/360_F_115207580_US2etunH78I7iMYHOoNVvxQTCIdoPdRj.jpg',
+            imageWidth: 400,
+            imageHeight: 250,
+            imageAlt: 'Custom image',
+          })
+    }
+
 })
 
 // Hide submenus
