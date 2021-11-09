@@ -23,11 +23,12 @@ $('.send-message').click(function(){
       return false;
     }
     else{
+        x.value = "";
           Swal.fire({
             icon: 'success',
             title: 'Thank you for your feedback!',
             text: 'Your feedback will help me improve the quality of my portfolio and website.',          
-          })
+        })
     }
 
 })
